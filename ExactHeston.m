@@ -1,0 +1,12 @@
+Rate = 0;
+AssetPrice = 4900;
+OptSpec = 'call';
+V0 = 0.04;
+ThetaV = 0.04;
+kappa = 0.5;
+SigmaV = 0.4;
+RhoSV = -0.3;
+Settle = datenum('29-Jun-2017');
+Maturity = datenum('29-Jun-2019');
+Strike = AssetPrice;
+opt = optByHestonNI(Rate,AssetPrice,Settle,Maturity,OptSpec,Strike,V0,ThetaV,kappa,SigmaV,RhoSV);
